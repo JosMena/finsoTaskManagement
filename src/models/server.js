@@ -21,7 +21,7 @@ class Server{
 
     async dbConnection() {
         try {
-            await sequelize.sync({ force: false }).then(() => {
+            await sequelize.sync({ force: true }).then(() => {
                 console.log('Database ready');
             });
 
